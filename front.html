@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="actividad">
+
+        <section class="ejercicio">
+            <label>LEDEZMA VALDEZ ALBERTO 5IV9</label>
+        </section>
+        
+        
+        <section id="e1" class="ejercicio">
+            <h2>Ejercicio 1</h2>
+            <label >1. Calculadora de Intereses</label><br>
+            <label>Inserte el capital inicial</label><br>
+            <input type="number"  id="capital" name="capital"><br>
+            <input type="button" onclick="interes()" class="boton" value="Calcular">                
+            <label id="resultado1"></label>
+            <script src="operacion.js"></script>
+        </section>
+        
+        
+
+        <section id="e2" class="ejercicio">
+            <h2>Ejercicio 2</h2>
+            <label >2. Comisiones</label><br>
+            <label>Inserrte su sueldo neto </label>
+            <input type="number" id="sueldoNeto"><br>
+            <label>Coloca las 3 ventas realizadas</label><br>
+
+            <input type="number" id="venta1"><br>
+            <input type="number"  id="venta2"><br>
+            <input type="number"  id="venta3"><br>
+            <input type="button" onclick="comision()" class="boton" value="Calcular">                
+            <label id="resultado2"></label>
+            <script src="operacion.js"></script>
+        </section>
+
+        <section id="e3" class="ejercicio">
+            <h2>Ejercicio 3</h2>
+            <label >3. Descuento 15%</label><br>
+            <label>Inserte el precio </label><br>
+            <input type="number" id="precio"><br>
+            <input type="button" onclick="descuento()" class="boton" value="Calcular">                
+            <label id="resultado3"></label>
+            <script src="operacion.js"></script>
+        </section>
+        
+        <section id="e4" class="ejercicio">
+            <h2>Ejercicio 4</h2>
+            <label >4. Calificacion de Algoritmos</label><br>
+            <label>Inserte las 3 calificaciones parciales de 1 a 10 (55%) </label><br>
+            <input type="number"  id="parcial1"><br>
+            <input type="number"  id="parcial2"><br>
+            <input type="number"  id="parcial3"><br>
+            <label>Inserte la calificacion del examen final de 1 a 10 (30%) </label><br>
+            <input type="number" min="0" max="100" id="examenFinal"><br>
+            <label>Inserte la calificacion del trabajo final de 1 a 10 (15%) </label><br>
+            <input type="number"  id="trabajoFinal"><br>   
+            <input type="button" onclick="calificacion()" class="boton" value="Calcular">                
+            <label id="resultado4"></label>
+            <script src="operacion.js"></script>
+        </section>  
+
+        <section id="e5" class="ejercicio">
+            <h2>Ejercicio 5</h2>
+            <label >5. Edad (en base a la fecha de hoy)</label><br>
+            <label>Inserta tu año de nacimiento</label><br>
+            <input type="date"id="nacimiento"><br>
+            <input type="button" onclick="edadHoy()" class="boton" value="Calcular edad">                
+            <label id="resultado5"></label>
+            <script src="operacion.js"></script>
+        </section>
+
+        <section id="e6" class="ejercicio">
+            <h2>Ejercicio 6</h2>
+            <label >6. PalabrasANumeros</label><br>
+            <label>Inserte numero en texto </label><br>
+            <input type="text"id="number"><br>
+            <input type="button" onclick="convertir()" class="boton" value="Traducir">                
+            <label id="resultado6"></label>
+            <script src="operacion.js"></script>
+        </section>
+
+        <section id="e7" class="ejercicio">
+            <h2>Ejercicio 7</h2>
+            <label >7. Horas extras </label><br>
+            <label>Inserte horas trabajadas </label><br>
+            <input type="number"id="horasTrabajadas"><br>
+            <label>Inserte su salario (por hora)</label><br>
+            <input type="number"id="salarioHora"><br>
+            <input type="button" onclick="horasExtras()" class="boton" value="Calcular salario">
+            <label id="resultado7"></label>
+            <script src="operacion.js"></script>
+        </section>
+
+        <section id="e8" class="ejercicio">
+            <h2>Ejercicio 8</h2>
+            <label >8. Utilidades</label><br>
+            <label>Inserte salario mensual</label><br>
+            <input type="number"id="salarioMensual"><br>
+            <label>Inserte sus años en la empresa</label><br>
+            <input type="number"id="años"><br>
+            <input type="button" onclick="utilidades()" class="boton" value="Calcular salario">
+            <label id="resultado8"></label>
+            <script src="operacion.js"></script>
+        </section>
+
+        <section id="e9" class="ejercicio">
+            <form method="get" name="registro" onsubmit="return validar(this)" action="">
+                <h2>Ejercicio 9</h2>
+                <label >9. Validar formulario DNI</label><br><br>
+
+                <label>Nombre(s): </label><br>
+                <input type="text" name="nombre" id="nombre" required><br>
+                <label>Email: </label><br>
+                <input type="text" name="email" id="email" required><br>
+                <label>Comentario: </label><br>
+                <input type="text" name="Comentario" id="comentario"><br>
+                <label>Contraseña: </label><br>
+                <input type="password" name="password" id="password"><br>
+                 <label>
+                <input id="acepto" type="checkbox" />
+                    Acepto las condiciones del servicio (obligatorio)
+                </label><br>
+                <input type="submit" class="boton" value="Enviar">
+                <script src="operacion.js"></script>
+            </form>
+        </section>
+
+        <section id="e10" class="ejercicio">
+            <h2>Ejercicio 10</h2>
+            <label >10. Eliminar script y su contenido</label><br>
+            <label>Inserte su cadena de HTML</label><br>
+            <input type="text"id="html"><br>
+            <input type="button" onclick="quitarScript()" class="boton" value="Quitar script">
+            <label id="resultado10"></label>
+            <script src="operacion.js"></script>
+        </section>
+
+    </div>  
+</body>
+</html>
